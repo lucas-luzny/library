@@ -1,9 +1,6 @@
 package com.ncdc.library.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Column;
@@ -18,6 +15,7 @@ import javax.persistence.MappedSuperclass;
 @AllArgsConstructor
 @Setter
 @Getter
+@ToString
 @MappedSuperclass
 class BaseModel {
 

@@ -45,7 +45,7 @@ public class LibraryController {
         if (bindingResult.hasErrors()) {
             return Constants.ADD_BOOK;
         }
-        log.info("Book: " + book + "successfully added to library!");
+        log.info("Book: " + book + " successfully added to library!");
         model.addAttribute(Constants.BOOK_ENTITY_NAME, book);
         bookService.save(book);
         return "redirect:" + Constants.VIEW_BOOKS;

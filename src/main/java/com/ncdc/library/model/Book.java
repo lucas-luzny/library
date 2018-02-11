@@ -13,6 +13,7 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @Setter
 @Getter
+@ToString
 @Entity
 @Table(name = "book")
 @AttributeOverrides({@AttributeOverride(name = "id", column = @Column(name = "book_id"))})
